@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Sociss Weather</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="WeatherCard" class="weather-card">
+
+    <div class="card-body">
+      <p>
+        <b>Thành phố </b> <span id="cityName">Da Nang</span>
+      </p>
+      <p>
+        <span id="temp">20</span> <sup>°</sup> C - Độ Ẩm <span id="humidity">82</span>%
+      </p>
+      Tốc độ gió <span id="wind">45</span> Km/h
+    </div>
+
+    <div class="card-footer">
+      <button class="close-button" type="button"
+      onclick="closePopup('WeatherCard')">
+      Close </button>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <!-- header -->
+    <header id="header">
+      <div class="branch-logo">
+        <b>Sociss Weather</b>
+      </div>
+
+      <nav>
+        <a href="/" class="active">Trang chủ</a>
+        <a href="/contact">Liên hệ</a>
+      </nav>
+    </header>
+    <!-- ./ header -->
+
+    <main class="page-content">
+      <h1>
+        Nhấp và xem thời tiết tại Việt Nam
+        <img class="move-up-effect" src="/images/location-icon.png" width="30" height="30" />
+      </h1>
+      <hr/>
+      <div class="map-box">
+        <!-- map image-->
+        <div class="map-image">
+          <img id="map" src="/images/vietnam-map.jpg" alt="VietNamMap" usemap="#VietNamMap" />
+
+          <map id="map-areas" name="VietNamMap">
+            <area shape="rect" alt="Đà Nẵng" title="da nang" coords="538,611,603,634" />
+            <area shape="rect" alt="Thừa Thiên Huế" title="Thua thien hue" coords="475,586,532,620"  />
+            <area shape="rect" alt="Quảng Trị" title="" coords="427,553,489,581"  />
+            <area shape="rect" alt="Quảng Bình" title="" coords="360,471,480,543"  />
+            <area shape="rect" alt="Hà Tĩnh" title="" coords="302,427,431,468"  />
+            <area shape="rect" alt="Nghệ An" title="" coords="216,330,355,382"  />
+            <area shape="rect" alt="Vinh" title="" coords="306,391,375,418"  />
+            <area shape="rect" alt="Thanh Hóa" title="" coords="285,302,388,323"  />
+            <area shape="rect" alt="Ninh Bình" title="" coords="314,271,392,289"  />
+            <area shape="rect" alt="Nam Định" title="" coords="379,259,453,279"  />
+            <area shape="rect" alt="Hà Nội" title="" coords="329,204,374,218"  />
+            <area shape="rect" alt="Sơn La" title="" coords="182,181,252,220"  />
+            <area shape="rect" alt="Yên Bái" title="" coords="233,140,300,168"  />
+            <area shape="rect" alt="Điện Biên" title="" coords="103,137,180,164"  />
+            <area shape="rect" alt="Quảng Nam" title="" coords="497,639,595,676"  />
+            <area shape="rect" alt="Quảng Ngãi" title="" coords="588,690,656,727"  />
+            <area shape="rect" alt="Kon Tum" title="" coords="518,740,571,766"  />
+            <area shape="rect" alt="Gia Lai" title="" coords="529,807,597,824"  />
+            <area shape="rect" alt="Bình Định" title="" coords="602,760,659,789"  />
+            <area shape="rect" alt="Quy Nhơn" title="" coords="625,801,703,818"  />
+            <area shape="rect" alt="Phú Yên" title="" coords="613,827,652,862"  />
+            <area shape="rect" alt="Tuy Hòa" title="" coords="638,864,684,885"  />
+            <area shape="rect" alt="Đắk Lắk" title="" coords="522,862,585,881"  />
+            <area shape="rect" alt="Lâm Đồng" title="" coords="513,974,582,997"  />
+            <area shape="rect" alt="Khánh Hòa" title="" coords="611,898,666,924"  />
+            <area shape="rect" alt="Hồ Chí Minh" title="" coords="426,1054,482,1080"  />
+            <area shape="rect" alt="Bình Thuận" title="" coords="515,1016,592,1038"  />
+            <area shape="rect" alt="Nha Trang" title="" coords="629,935,702,954"  />
+          </map>
+        </div>
+        <!-- ./ map image -->
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      Gsmart Team, 2017
+    </footer>
+    <!-- ./ footer -->
+  </div>
+</body>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/js/app.js"></script>
+</html>
